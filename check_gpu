@@ -1,0 +1,11 @@
+#!/bin/zsh
+/usr/sbin/system_profiler SPDisplaysDataType 2>/dev/null | awk "
+/Chipset Model:/ {chip=\$0}
+/Display Type:/ {
+  if (chip != \"\") {
+    print chip;
+    print \$0;
+    print \"\";
+    chip=\"\";
+  }
+}"
