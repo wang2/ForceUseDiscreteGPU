@@ -157,5 +157,6 @@ sudo rm /usr/local/bin/force_dgpu.sh /usr/local/bin/check_gpu
 
 Inspired by community fixes for hybrid MacBook Pros (2015–2019).  
 Maintained and simplified for modern macOS environments by wang2.
+Written all the stuff by ChatGPT 5.1
 
 ---
